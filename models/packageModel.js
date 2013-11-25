@@ -1,4 +1,4 @@
-Package = function()
+ArchPackage = function()
 {
     this.name = 'noname';
     this.project = null;

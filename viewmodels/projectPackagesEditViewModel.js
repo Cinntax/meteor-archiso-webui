@@ -11,7 +11,7 @@ if (Meteor.isClient) {
     
     Template.projectPackagesEditView.events({
         'click #AddButton' : function () {
-            var test = new Package();
+            var test = new ArchPackage();
             test.name = 'test package';
             test.project = Session.get("selected_project");
             packageList.insert(test);
@@ -20,7 +20,7 @@ if (Meteor.isClient) {
             packageList.remove(Session.get("selected_project"));
         },
         'click #AddRecommended' : function (){
-            var test = new Package();
+            var test = new ArchPackage();
             test.name = 'recommended package 1';
             test.project = Session.get("selected_project");
             packageList.insert(test);
