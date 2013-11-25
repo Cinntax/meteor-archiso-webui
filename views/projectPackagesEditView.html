@@ -1,0 +1,13 @@
+<template name="projectPackagesEditView">
+    {{#if isVisible }}
+        <h2>Packages</h2>
+        <ul>
+            {{#each packages}}
+                <li style="cursor:pointer;margin-bottom:10px;">{{name}}</li>
+            {{/each}}
+        </ul>
+        <input id="AddButton" type="button" value="Add a new package" />
+        <input id="RemoveButton" type="button" value="Remove package" />
+        <input id="AddRecommended" type="button" value="Add Recommended Arch Packages" />
+    {{/if}}
+</template>

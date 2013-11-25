@@ -1,0 +1,24 @@
+<head>
+  <title>ArchISO Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        Welcome to the ArchISO Builder!
+        <img src="https://wiki.archlinux.org/skins/archlinux/archlogo.png?2011-08-11T22:06:40Z" />
+    </header>
+    {{> nav }}
+    <section id="projectSection" class="row">
+        <section class="span3">
+            {{> projectList}}
+        </section>
+        <section class="span9">
+            {{> projectDisplayView}}
+        </section>
+            {{> projectEditView}}
+    </section>
+    <section class="row span12">
+        {{> jobList}}
+    </section>
+</body>

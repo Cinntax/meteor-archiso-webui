@@ -1,0 +1,31 @@
+<template name="projectHeaderEditView">
+    {{#if isVisible }}
+        <h2>General Information</h2>
+        <ul>
+            <li>
+                <label for="projectName">Name</label>
+                <input type="text" id="projectName" value="{{selectedProject.name}}" />
+            </li>
+            <li>
+                <label for="projectArchitecture">Architecture</label>
+                <select id="projectArchitecture">
+                    <option value="{{Arch_32}}">32-Bit</option>
+                    <option value="{{Arch_64}}">64-Bit</option>
+                    <option value="{{Arch_Both}}">Both</option>
+                </select>
+            </li>
+            <li>
+                <label for="projectAuthor">Author</label>
+                <input type="text" id="projectAuthor" value="{{selectedProject.author}}"/>  
+            </li>
+            <li>
+                <label for="projectVersion">Version</label>
+                <input type="text" id="projectVersion" value="{{selectedProject.version}}" />  
+            </li>
+            <li>
+                <label for="projectDesc">Description</label>
+                <input type="text" id="projectDesc" value="{{selectedProject.description}}" />  
+            </li>
+        </ul>
+    {{/if}}
+</template>

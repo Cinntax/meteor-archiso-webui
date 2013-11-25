@@ -1,0 +1,12 @@
+<template name="projectList">
+{{#if isVisible }}
+    <h1>Projects</h1>
+    <ul>
+        {{#each projects}}
+            <li style="cursor:pointer;margin-bottom:10px;">{{name}}<input type="button" value="Edit" data-toggle="modal" data-target="#editModal" /></li>
+        {{/each}}
+    </ul>
+  <input id="AddButton" type="button" value="Add a new project" />
+  <input id="RemoveButton" type="button" value="Remove Project" />
+{{/if}}
+</template>

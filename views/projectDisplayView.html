@@ -1,0 +1,27 @@
+<template name="projectDisplayView">
+{{#if isVisible}}
+    <h1>Project Details</h1>
+    <fieldset>
+        <legend>General Information</legend>
+        <ul>
+            <li>
+                Name: {{selectedProject.name}}
+            </li>  
+            <li>
+                Architecture: {{selectedProject.architecture}}
+            </li>
+            <li>
+                Author: {{selectedProject.author}}  
+            </li>
+            <li>
+                Version: {{selectedProject.version}}
+            </li>
+            <li>
+                Description:
+                <p>{{selectedProject.description}}</p>
+            </li>
+        </ul>
+    </fieldset>
+    <input id="BuildButton" type="button" value="Build!" />
+    {{/if}}
+</template>

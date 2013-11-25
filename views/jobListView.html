@@ -1,0 +1,10 @@
+<template name="jobList">
+{{#if isVisible }}
+    <h1>Build Jobs</h1>
+    <ul>
+        {{#each jobs}}
+            <li style="cursor:pointer;margin-bottom:10px;">{{name}}</li>
+        {{/each}}
+    </ul>
+{{/if}}
+</template>
